@@ -1,0 +1,204 @@
+18:15:28 default: Job OK (c47ad02e-70c8-45aa-b610-2348c6c3831c)
+18:15:28 Result is kept for 500 seconds
+18:15:28 Cleaning registries for queue: default
+18:15:49 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.tunatechnology.com', user='Administrator') (76c1df45-5bbc-4ada-a1af-535850d491ba)
+18:15:49 default: Job OK (76c1df45-5bbc-4ada-a1af-535850d491ba)
+18:15:49 Result is kept for 500 seconds
+18:15:49 Cleaning registries for queue: default
+18:15:07 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.tunatechnology.com', user='Administrator') (b46d756c-ebba-44d1-9d6d-361ad7acd842)
+18:15:07 default: Job OK (b46d756c-ebba-44d1-9d6d-361ad7acd842)
+18:15:07 Result is kept for 500 seconds
+18:15:07 Cleaning registries for queue: default
+08:16:21 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.desk.doctype.notification_log.notification_log.make_notification_logs', kwargs={'doc': {'type': 'Energy Point', 'document_type': 'Supplier', 'document_name': 'Fency', 'subject': '<b>You</b> gained <b>5</b> points for On Supplier Creation <b class="subject-title">Fency</b>', 'from_user': 'headoffice@paicho.com', 'email_content': None}, 'users': ['headoffice@paicho.com']}, method='frappe.desk.doctype.notification_log.notification_log.make_notification_logs', site='erp.tunatechnology.com', user='headoffice@paicho.com') (fa55ae97-5445-41fd-8b2e-11ea23aff014)
+08:16:21 default: Job OK (fa55ae97-5445-41fd-8b2e-11ea23aff014)
+08:16:21 Result is kept for 500 seconds
+08:16:21 Cleaning registries for queue: default
+18:15:27 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.tunatechnology.com', user='Administrator') (ff59dbb4-6c8d-44ba-bd19-adc3924a3146)
+18:15:27 default: Job OK (ff59dbb4-6c8d-44ba-bd19-adc3924a3146)
+18:15:27 Result is kept for 500 seconds
+18:15:27 Cleaning registries for queue: default
+18:15:46 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.tunatechnology.com', user='Administrator') (94aba878-9b92-42f0-bc2d-188c5ebb009a)
+18:15:46 default: Job OK (94aba878-9b92-42f0-bc2d-188c5ebb009a)
+18:15:46 Result is kept for 500 seconds
+18:15:46 Cleaning registries for queue: default
+18:15:05 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', kwargs={'data': []}, method='frappe.automation.doctype.auto_repeat.auto_repeat.create_repeated_entries', site='erp.tunatechnology.com', user='Administrator') (d7b7b161-c883-4cc4-8a22-55b5084f77ae)
+18:15:05 default: Job OK (d7b7b161-c883-4cc4-8a22-55b5084f77ae)
+18:15:05 Result is kept for 500 seconds
+18:15:05 Cleaning registries for queue: default
+18:15:06 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='delete_prepared_reports', kwargs={'reports': [{'name': 'REP00396'}, {'name': 'REP00395'}, {'name': 'REP00394'}]}, method=<function delete_prepared_reports at 0x7f49655d1dc0>, site='erp.tunatechnology.com', user='Administrator') (1120e8d3-bf19-481c-a68e-b89e059789ca)
+18:15:07 default: Job OK (1120e8d3-bf19-481c-a68e-b89e059789ca)
+18:15:07 Result is kept for 500 seconds
+18:15:07 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'File', 'name': '152fcfd11a'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (ced51840-80fe-421a-858e-cd44c8bad8e4)
+18:15:07 default: Job OK (ced51840-80fe-421a-858e-cd44c8bad8e4)
+18:15:07 Result is kept for 500 seconds
+18:15:07 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Prepared Report', 'name': 'REP00396'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (fcfc48f3-6946-4c33-9037-fdb24a4cd217)
+18:15:08 default: Job OK (fcfc48f3-6946-4c33-9037-fdb24a4cd217)
+18:15:08 Result is kept for 500 seconds
+18:15:08 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'File', 'name': '22bb3dc848'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (0eebb120-bb68-49a5-b2c2-6d16047f3f54)
+18:15:08 default: Job OK (0eebb120-bb68-49a5-b2c2-6d16047f3f54)
+18:15:08 Result is kept for 500 seconds
+18:15:08 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Prepared Report', 'name': 'REP00395'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (ca8a608b-7e18-4ef7-80ae-3f49632fc17a)
+18:15:08 default: Job OK (ca8a608b-7e18-4ef7-80ae-3f49632fc17a)
+18:15:08 Result is kept for 500 seconds
+18:15:08 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'File', 'name': '9dd66b24d2'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (ee33341f-3701-439f-aded-75344306def8)
+18:15:08 default: Job OK (ee33341f-3701-439f-aded-75344306def8)
+18:15:08 Result is kept for 500 seconds
+18:15:08 default: frappe.utils.background_jobs.execute_job(event=None, is_async=True, job_name='frappe.model.delete_doc.delete_dynamic_links', kwargs={'doctype': 'Prepared Report', 'name': 'REP00394'}, method='frappe.model.delete_doc.delete_dynamic_links', site='erp.tunatechnology.com', user='Administrator') (5b80937e-d114-4a03-84be-b1a6ea5e3a15)
+18:15:08 default: Job OK (5b80937e-d114-4a03-84be-b1a6ea5e3a15)
+18:15:08 Result is kept for 500 seconds
+06:43:13 RQ worker 'rq:worker:71524f1e90bf4a1881ea46c0ad415f44.restore.1241.default' started, version 0.12.0
+06:43:13 *** Listening on default...
+06:43:13 Cleaning registries for queue: default
+06:43:13 RQ worker 'rq:worker:264eb24a6130409a9fcca7b35216b5ad.restore.1242.short' started, version 0.12.0
+06:43:13 *** Listening on short...
+06:43:13 Cleaning registries for queue: short
+06:43:13 RQ worker 'rq:worker:03aba4ac99df4b66bd2dc570fdba105a.restore.1243.long' started, version 0.12.0
+06:43:13 *** Listening on long...
+06:43:13 Cleaning registries for queue: long
+06:44:13 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.queue.flush', kwargs={}, method='frappe.email.queue.flush', site='erp.tunatechnology.com', user='Administrator') (ca48efe4-2594-41c8-b75d-62f7e26569e1)
+06:44:13 short: Job OK (ca48efe4-2594-41c8-b75d-62f7e26569e1)
+06:44:13 Result is kept for 500 seconds
+06:44:13 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.pull', kwargs={}, method='frappe.email.doctype.email_account.email_account.pull', site='erp.tunatechnology.com', user='Administrator') (63e9d990-3f0e-4cba-84c7-4f3c282f4807)
+06:44:13 short: Job OK (63e9d990-3f0e-4cba-84c7-4f3c282f4807)
+06:44:13 Result is kept for 500 seconds
+06:44:13 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.notify_unreplied', kwargs={}, method='frappe.email.doctype.email_account.email_account.notify_unreplied', site='erp.tunatechnology.com', user='Administrator') (5e244991-4548-488c-bc51-b3cc2a2f5712)
+06:44:14 short: Job OK (5e244991-4548-488c-bc51-b3cc2a2f5712)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.oauth.delete_oauth2_data', kwargs={}, method='frappe.oauth.delete_oauth2_data', site='erp.tunatechnology.com', user='Administrator') (5155a83e-53d7-4576-b626-83c42d0fa7e6)
+06:44:14 short: Job OK (5155a83e-53d7-4576-b626-83c42d0fa7e6)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', kwargs={}, method='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', site='erp.tunatechnology.com', user='Administrator') (05edb532-7902-4f84-be9c-318acc63b1f3)
+06:44:14 short: Job OK (05edb532-7902-4f84-be9c-318acc63b1f3)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.twofactor.delete_all_barcodes_for_users', kwargs={}, method='frappe.twofactor.delete_all_barcodes_for_users', site='erp.tunatechnology.com', user='Administrator') (cf70e49a-5178-471a-99ab-c6563c0a1459)
+06:44:14 short: Job OK (cf70e49a-5178-471a-99ab-c6563c0a1459)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.website.doctype.web_page.web_page.check_publish_status', kwargs={}, method='frappe.website.doctype.web_page.web_page.check_publish_status', site='erp.tunatechnology.com', user='Administrator') (7ae9c9a9-636e-43d0-9b98-d005462a43ec)
+06:44:14 short: Job OK (7ae9c9a9-636e-43d0-9b98-d005462a43ec)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.utils.global_search.sync_global_search', kwargs={}, method='frappe.utils.global_search.sync_global_search', site='erp.tunatechnology.com', user='Administrator') (834a20b8-ca59-4ad9-b310-efbfcd48fc71)
+06:44:14 short: Job OK (834a20b8-ca59-4ad9-b310-efbfcd48fc71)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.monitor.flush', kwargs={}, method='frappe.monitor.flush', site='erp.tunatechnology.com', user='Administrator') (b3e1dca0-d08a-41d8-81da-eee0fe7194dd)
+06:44:14 short: Job OK (b3e1dca0-d08a-41d8-81da-eee0fe7194dd)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.projects.doctype.project.project.project_status_update_reminder', kwargs={}, method='erpnext.projects.doctype.project.project.project_status_update_reminder', site='erp.tunatechnology.com', user='Administrator') (fc36cd49-c501-415d-a5a6-c230a626acce)
+06:44:14 short: Job OK (fc36cd49-c501-415d-a5a6-c230a626acce)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', kwargs={}, method='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', site='erp.tunatechnology.com', user='Administrator') (ccacf95b-43e8-44d5-963d-af8be91ecae8)
+06:44:14 short: Job OK (ccacf95b-43e8-44d5-963d-af8be91ecae8)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.model.utils.link_count.update_link_count', kwargs={}, method='frappe.model.utils.link_count.update_link_count', site='erp.tunatechnology.com', user='Administrator') (77c85282-1d7c-4dea-93eb-61109336c740)
+06:44:14 short: Job OK (77c85282-1d7c-4dea-93eb-61109336c740)
+06:44:14 Result is kept for 500 seconds
+06:44:14 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.model.utils.user_settings.sync_user_settings', kwargs={}, method='frappe.model.utils.user_settings.sync_user_settings', site='erp.tunatechnology.com', user='Administrator') (a1ebeb75-f41f-4564-a4f5-71478d3ea010)
+06:44:15 short: Job OK (a1ebeb75-f41f-4564-a4f5-71478d3ea010)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.utils.error.collect_error_snapshots', kwargs={}, method='frappe.utils.error.collect_error_snapshots', site='erp.tunatechnology.com', user='Administrator') (16ca781e-7a86-454a-92a8-ef0a53e9dde1)
+06:44:15 short: Job OK (16ca781e-7a86-454a-92a8-ef0a53e9dde1)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.desk.page.backups.backups.delete_downloadable_backups', kwargs={}, method='frappe.desk.page.backups.backups.delete_downloadable_backups', site='erp.tunatechnology.com', user='Administrator') (f600e98c-e7a3-4eab-8882-56cbdeb7c188)
+06:44:15 short: Job OK (f600e98c-e7a3-4eab-8882-56cbdeb7c188)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.deferred_insert.save_to_db', kwargs={}, method='frappe.deferred_insert.save_to_db', site='erp.tunatechnology.com', user='Administrator') (49dc0578-e910-4ff3-937f-f0740be06685)
+06:44:15 short: Job OK (49dc0578-e910-4ff3-937f-f0740be06685)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.desk.form.document_follow.send_hourly_updates', kwargs={}, method='frappe.desk.form.document_follow.send_hourly_updates', site='erp.tunatechnology.com', user='Administrator') (0c67a2c1-5cb5-41c7-91f5-3bb07abb8c88)
+06:44:15 short: Job OK (0c67a2c1-5cb5-41c7-91f5-3bb07abb8c88)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='frappe.integrations.doctype.google_calendar.google_calendar.sync', kwargs={}, method='frappe.integrations.doctype.google_calendar.google_calendar.sync', site='erp.tunatechnology.com', user='Administrator') (dd37d1a9-661c-496b-b93a-3fcca9474578)
+06:44:15 short: Job OK (dd37d1a9-661c-496b-b93a-3fcca9474578)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails', kwargs={}, method='erpnext.hr.doctype.daily_work_summary_group.daily_work_summary_group.trigger_emails', site='erp.tunatechnology.com', user='Administrator') (541e57a7-3c3c-489e-a955-4e14ae72856b)
+06:44:15 short: Job OK (541e57a7-3c3c-489e-a955-4e14ae72856b)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.accounts.doctype.subscription.subscription.process_all', kwargs={}, method='erpnext.accounts.doctype.subscription.subscription.process_all', site='erp.tunatechnology.com', user='Administrator') (2866ebed-a04c-469e-9142-984ac8b9e8bc)
+06:44:15 short: Job OK (2866ebed-a04c-469e-9142-984ac8b9e8bc)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details', kwargs={}, method='erpnext.erpnext_integrations.doctype.amazon_mws_settings.amazon_mws_settings.schedule_get_order_details', site='erp.tunatechnology.com', user='Administrator') (fab3cde3-fe5d-4fec-9afa-5b758721a18d)
+06:44:15 short: Job OK (fab3cde3-fe5d-4fec-9afa-5b758721a18d)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs', kwargs={}, method='erpnext.accounts.doctype.gl_entry.gl_entry.rename_gle_sle_docs', site='erp.tunatechnology.com', user='Administrator') (722945f8-2ba5-4b43-be9b-c8564c04a1c1)
+06:44:15 short: Job OK (722945f8-2ba5-4b43-be9b-c8564c04a1c1)
+06:44:15 Result is kept for 500 seconds
+06:44:15 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization', kwargs={}, method='erpnext.erpnext_integrations.doctype.plaid_settings.plaid_settings.automatic_synchronization', site='erp.tunatechnology.com', user='Administrator') (a5e170dc-89ab-4c33-a0be-1dbff0f14bdf)
+06:44:16 short: Job OK (a5e170dc-89ab-4c33-a0be-1dbff0f14bdf)
+06:44:16 Result is kept for 500 seconds
+06:44:16 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.projects.doctype.project.project.hourly_reminder', kwargs={}, method='erpnext.projects.doctype.project.project.hourly_reminder', site='erp.tunatechnology.com', user='Administrator') (21de0c62-ace0-4d9c-945c-cb999911cc97)
+06:44:16 short: Job OK (21de0c62-ace0-4d9c-945c-cb999911cc97)
+06:44:16 Result is kept for 500 seconds
+06:44:16 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.projects.doctype.project.project.collect_project_status', kwargs={}, method='erpnext.projects.doctype.project.project.collect_project_status', site='erp.tunatechnology.com', user='Administrator') (59bf0065-f02f-4a7a-b318-6af6c78c5dd5)
+06:44:16 short: Job OK (59bf0065-f02f-4a7a-b318-6af6c78c5dd5)
+06:44:16 Result is kept for 500 seconds
+06:44:16 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts', kwargs={}, method='erpnext.hr.doctype.shift_type.shift_type.process_auto_attendance_for_all_shifts', site='erp.tunatechnology.com', user='Administrator') (d5d7835d-f613-4c8a-90a6-802519231bc2)
+06:44:16 short: Job OK (d5d7835d-f613-4c8a-90a6-802519231bc2)
+06:44:16 Result is kept for 500 seconds
+06:44:16 short: frappe.utils.background_jobs.execute_job(event='hourly', is_async=True, job_name='erpnext.support.doctype.issue.issue.set_service_level_agreement_variance', kwargs={}, method='erpnext.support.doctype.issue.issue.set_service_level_agreement_variance', site='erp.tunatechnology.com', user='Administrator') (f2250fb9-f0bb-4d2e-9af8-873f63427869)
+06:44:16 short: Job OK (f2250fb9-f0bb-4d2e-9af8-873f63427869)
+06:44:16 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.queue.flush', kwargs={}, method='frappe.email.queue.flush', site='erp.tunatechnology.com', user='Administrator') (bf910bbf-4f6e-46ab-8e9c-102be755d998)
+06:47:14 short: Job OK (bf910bbf-4f6e-46ab-8e9c-102be755d998)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.pull', kwargs={}, method='frappe.email.doctype.email_account.email_account.pull', site='erp.tunatechnology.com', user='Administrator') (3d43031c-72fa-4992-a2d5-84c861d3154c)
+06:47:14 short: Job OK (3d43031c-72fa-4992-a2d5-84c861d3154c)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.notify_unreplied', kwargs={}, method='frappe.email.doctype.email_account.email_account.notify_unreplied', site='erp.tunatechnology.com', user='Administrator') (8c6e065a-c8a1-4558-8520-505dd16d3686)
+06:47:14 short: Job OK (8c6e065a-c8a1-4558-8520-505dd16d3686)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.oauth.delete_oauth2_data', kwargs={}, method='frappe.oauth.delete_oauth2_data', site='erp.tunatechnology.com', user='Administrator') (33a9e9d0-fcde-4547-b1d7-157302aeed6c)
+06:47:14 short: Job OK (33a9e9d0-fcde-4547-b1d7-157302aeed6c)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', kwargs={}, method='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', site='erp.tunatechnology.com', user='Administrator') (3522f687-9ed6-49de-bd37-db2b5234bc28)
+06:47:14 short: Job OK (3522f687-9ed6-49de-bd37-db2b5234bc28)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.twofactor.delete_all_barcodes_for_users', kwargs={}, method='frappe.twofactor.delete_all_barcodes_for_users', site='erp.tunatechnology.com', user='Administrator') (c5a22edf-a1e4-4583-a3e7-f1d0bcd1350a)
+06:47:14 short: Job OK (c5a22edf-a1e4-4583-a3e7-f1d0bcd1350a)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.website.doctype.web_page.web_page.check_publish_status', kwargs={}, method='frappe.website.doctype.web_page.web_page.check_publish_status', site='erp.tunatechnology.com', user='Administrator') (a064656d-d50c-4c93-9505-5c4169cd237c)
+06:47:14 short: Job OK (a064656d-d50c-4c93-9505-5c4169cd237c)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.utils.global_search.sync_global_search', kwargs={}, method='frappe.utils.global_search.sync_global_search', site='erp.tunatechnology.com', user='Administrator') (9c3d41b1-63ed-479f-9d42-93c56ad6b4c4)
+06:47:14 short: Job OK (9c3d41b1-63ed-479f-9d42-93c56ad6b4c4)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.monitor.flush', kwargs={}, method='frappe.monitor.flush', site='erp.tunatechnology.com', user='Administrator') (b3f78b6c-2024-42f7-838d-fd99a43a62b3)
+06:47:14 short: Job OK (b3f78b6c-2024-42f7-838d-fd99a43a62b3)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.projects.doctype.project.project.project_status_update_reminder', kwargs={}, method='erpnext.projects.doctype.project.project.project_status_update_reminder', site='erp.tunatechnology.com', user='Administrator') (1be3cda7-e059-44b6-ad78-90774ce597a6)
+06:47:14 short: Job OK (1be3cda7-e059-44b6-ad78-90774ce597a6)
+06:47:14 Result is kept for 500 seconds
+06:47:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', kwargs={}, method='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', site='erp.tunatechnology.com', user='Administrator') (5bee7d70-9f39-40dc-996c-5a0b2716b1f6)
+06:47:14 short: Job OK (5bee7d70-9f39-40dc-996c-5a0b2716b1f6)
+06:47:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.queue.flush', kwargs={}, method='frappe.email.queue.flush', site='erp.tunatechnology.com', user='Administrator') (66721fe6-7fab-4b8d-8735-a57909229ba2)
+06:51:14 short: Job OK (66721fe6-7fab-4b8d-8735-a57909229ba2)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.pull', kwargs={}, method='frappe.email.doctype.email_account.email_account.pull', site='erp.tunatechnology.com', user='Administrator') (58cc14c4-1360-4eef-a29e-8bb4b72c16fd)
+06:51:14 short: Job OK (58cc14c4-1360-4eef-a29e-8bb4b72c16fd)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.email.doctype.email_account.email_account.notify_unreplied', kwargs={}, method='frappe.email.doctype.email_account.email_account.notify_unreplied', site='erp.tunatechnology.com', user='Administrator') (9166a32b-3f01-4a54-b1de-a98f11dc638b)
+06:51:14 short: Job OK (9166a32b-3f01-4a54-b1de-a98f11dc638b)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.oauth.delete_oauth2_data', kwargs={}, method='frappe.oauth.delete_oauth2_data', site='erp.tunatechnology.com', user='Administrator') (3b0eb2a4-4a86-4d4c-9a84-76274e056763)
+06:51:14 short: Job OK (3b0eb2a4-4a86-4d4c-9a84-76274e056763)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', kwargs={}, method='frappe.integrations.doctype.razorpay_settings.razorpay_settings.capture_payment', site='erp.tunatechnology.com', user='Administrator') (a061c88a-48ce-40be-b01d-917a2c1ab73b)
+06:51:14 short: Job OK (a061c88a-48ce-40be-b01d-917a2c1ab73b)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.twofactor.delete_all_barcodes_for_users', kwargs={}, method='frappe.twofactor.delete_all_barcodes_for_users', site='erp.tunatechnology.com', user='Administrator') (c466a6ce-35be-43c9-9181-6fcc15a29ea1)
+06:51:14 short: Job OK (c466a6ce-35be-43c9-9181-6fcc15a29ea1)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.website.doctype.web_page.web_page.check_publish_status', kwargs={}, method='frappe.website.doctype.web_page.web_page.check_publish_status', site='erp.tunatechnology.com', user='Administrator') (f6f5c4c2-063e-4bc8-bd81-f18879871b6b)
+06:51:14 short: Job OK (f6f5c4c2-063e-4bc8-bd81-f18879871b6b)
+06:51:14 Result is kept for 500 seconds
+06:51:14 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.utils.global_search.sync_global_search', kwargs={}, method='frappe.utils.global_search.sync_global_search', site='erp.tunatechnology.com', user='Administrator') (7ff64e7f-beb3-4c43-8570-913a7c15c33b)
+06:51:15 short: Job OK (7ff64e7f-beb3-4c43-8570-913a7c15c33b)
+06:51:15 Result is kept for 500 seconds
+06:51:15 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='frappe.monitor.flush', kwargs={}, method='frappe.monitor.flush', site='erp.tunatechnology.com', user='Administrator') (b23b008c-4e17-43ed-8212-7c44019aeebe)
+06:51:15 short: Job OK (b23b008c-4e17-43ed-8212-7c44019aeebe)
+06:51:15 Result is kept for 500 seconds
+06:51:15 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.projects.doctype.project.project.project_status_update_reminder', kwargs={}, method='erpnext.projects.doctype.project.project.project_status_update_reminder', site='erp.tunatechnology.com', user='Administrator') (37e92b25-8038-4450-bd1e-81630c4e6fa1)
+06:51:15 short: Job OK (37e92b25-8038-4450-bd1e-81630c4e6fa1)
+06:51:15 Result is kept for 500 seconds
+06:51:15 short: frappe.utils.background_jobs.execute_job(event='all', is_async=True, job_name='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', kwargs={}, method='erpnext.healthcare.doctype.patient_appointment.patient_appointment.set_appointment_reminder', site='erp.tunatechnology.com', user='Administrator') (e6da1e6e-8e3c-48de-b965-157401c5eecc)
+06:51:15 short: Job OK (e6da1e6e-8e3c-48de-b965-157401c5eecc)
+06:51:15 Result is kept for 500 seconds

@@ -1,0 +1,37 @@
+2022-04-05 13:58:00,036 INFO Getting app erpnext
+2022-04-05 13:58:05,377 INFO installing erpnext
+2022-04-05 14:06:10,724 INFO Getting app erpnext
+2022-04-05 14:06:16,582 INFO installing erpnext
+2022-04-05 14:08:50,013 INFO installing frappe
+2022-04-05 14:08:55,246 INFO installing erpnext
+2022-04-05 14:13:42,352 INFO Getting app erpnext
+2022-04-05 14:13:47,851 INFO installing erpnext
+2022-04-12 11:31:59,272 INFO Getting app POS-Awesome
+2022-04-12 11:32:00,804 INFO installing posawesome
+2022-04-12 11:32:43,281 INFO installing frappe
+2022-04-12 11:32:50,003 INFO installing erpnext
+2022-04-12 11:32:55,775 INFO installing posawesome
+2022-04-12 11:36:45,967 INFO Getting app whitelabel
+2022-04-12 11:36:47,351 INFO installing whitelabel
+2022-05-05 18:50:33,186 INFO Getting app pos_bahrain
+2022-05-05 18:50:34,321 INFO installing pos_bahrain
+2022-05-05 18:51:26,414 INFO Getting app POS-Awesome
+2022-05-05 18:51:27,823 INFO installing posawesome
+2022-05-05 18:52:10,252 INFO installing frappe
+2022-05-05 18:52:17,385 INFO installing erpnext
+2022-05-05 18:52:23,641 INFO installing whitelabel
+2022-05-05 18:52:29,245 INFO installing pos_bahrain
+2022-05-05 18:52:35,133 INFO installing posawesome
+2022-05-05 19:01:00,487 INFO installing frappe
+2022-05-05 19:01:06,573 INFO installing erpnext
+2022-05-05 19:01:11,742 INFO installing whitelabel
+2022-05-05 19:01:17,248 INFO installing pos_bahrain
+2022-05-05 19:01:23,235 INFO installing posawesome
+2022-05-27 06:54:35,130 INFO Getting app bluetheme
+2022-05-27 06:54:36,016 INFO installing bluetheme
+2022-06-04 15:45:13,430 INFO Getting app doubleledger
+2022-06-04 15:45:14,340 INFO installing doubleledger
+2022-06-16 07:27:43,637 INFO Getting app pos_bahrain
+2022-06-16 07:27:44,643 INFO installing pos_bahrain
+2022-06-18 22:58:17,041 INFO Getting app Oman_VAT
+2022-06-18 22:58:18,488 INFO installing oman_vat

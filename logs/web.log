@@ -1,0 +1,1875 @@
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 250, in authenticate
+    self.fail('Invalid login credentials', user=user.name)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 452, in get_values
+    out = self._get_values_from_table(fields, filters, doctype, as_dict, debug, order_by, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 597, in _get_values_from_table
+    r = self.sql("select {0} from `tab{1}` {2} {3} {4}"
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_4f69356faeb819de.tabUser' doesn't exist")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 125, in __init__
+    self.get_user_info()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 159, in get_user_info
+    self.info = frappe.db.get_value("User", self.user,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 407, in get_value
+    ret = self.get_values(doctype, filters, fieldname, ignore, as_dict, debug,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 459, in get_values
+    out = self.get_values_from_single(fields, filters, doctype, as_dict, debug, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 496, in get_values_from_single
+    r = self.sql("""select field, value
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_4f69356faeb819de.tabSingles' doesn't exist")
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 452, in get_values
+    out = self._get_values_from_table(fields, filters, doctype, as_dict, debug, order_by, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 597, in _get_values_from_table
+    r = self.sql("select {0} from `tab{1}` {2} {3} {4}"
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_4f69356faeb819de.tabUser' doesn't exist")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 125, in __init__
+    self.get_user_info()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 159, in get_user_info
+    self.info = frappe.db.get_value("User", self.user,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 407, in get_value
+    ret = self.get_values(doctype, filters, fieldname, ignore, as_dict, debug,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 459, in get_values
+    out = self.get_values_from_single(fields, filters, doctype, as_dict, debug, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 496, in get_values_from_single
+    r = self.sql("""select field, value
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table '_4f69356faeb819de.tabSingles' doesn't exist")
+
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 581, in connect
+    sock = socket.create_connection(
+  File "/usr/lib/python3.8/socket.py", line 808, in create_connection
+    raise err
+  File "/usr/lib/python3.8/socket.py", line 796, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 125, in __init__
+    self.get_user_info()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 159, in get_user_info
+    self.info = frappe.db.get_value("User", self.user,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 407, in get_value
+    ret = self.get_values(doctype, filters, fieldname, ignore, as_dict, debug,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 452, in get_values
+    out = self._get_values_from_table(fields, filters, doctype, as_dict, debug, order_by, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 597, in _get_values_from_table
+    r = self.sql("select {0} from `tab{1}` {2} {3} {4}"
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 122, in sql
+    self.connect()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 75, in connect
+    self._conn = self.get_connection()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 88, in get_connection
+    conn = pymysql.connect(self.host, self.user or '', self.password or '',
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([Errno 111] Connection refused)")
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/render.py", line 50, in render
+    data = render_page_by_language(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/render.py", line 177, in render_page_by_language
+    return render_page(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/render.py", line 193, in render_page
+    return build(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/render.py", line 200, in build
+    return build_page(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/render.py", line 215, in build_page
+    context = get_context(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 15, in get_context
+    context = get_page_context(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/router.py", line 42, in get_page_context
+    page_context = make_page_context(path)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/router.py", line 52, in make_page_context
+    raise frappe.PageDoesNotExistError
+frappe.exceptions.PageDoesNotExistError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/list.py", line 24, in get_context
+    context.update(get(**frappe.local.form_dict))
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/list.py", line 30, in get
+    raw_result = get_list_data(doctype, txt, limit_start, limit=limit + 1, **kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/list.py", line 102, in get_list_data
+    raw_result = _get_list(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/list.py", line 199, in get_list
+    return frappe.get_list(doctype, fields = fields,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 1341, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(None, *args, **kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/model/db_query.py", line 96, in execute
+    result = self.build_and_run()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/model/db_query.py", line 110, in build_and_run
+    args = self.prepare_args()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/model/db_query.py", line 136, in prepare_args
+    self.set_optional_columns()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/model/db_query.py", line 302, in set_optional_columns
+    columns = get_table_columns(self.doctype)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/model/meta.py", line 49, in get_table_columns
+    return frappe.db.get_table_columns(doctype)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 873, in get_table_columns
+    raise self.TableMissingError('DocType', doctype)
+pymysql.err.ProgrammingError: ('DocType', 'Homepage')
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 713, in _write_bytes
+    self._sock.sendall(data)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 125, in __init__
+    self.get_user_info()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 159, in get_user_info
+    self.info = frappe.db.get_value("User", self.user,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 407, in get_value
+    ret = self.get_values(doctype, filters, fieldname, ignore, as_dict, debug,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 452, in get_values
+    out = self._get_values_from_table(fields, filters, doctype, as_dict, debug, order_by, update)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 597, in _get_values_from_table
+    r = self.sql("select {0} from `tab{1}` {2} {3} {4}"
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 122, in sql
+    self.connect()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/database.py", line 75, in connect
+    self._conn = self.get_connection()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 88, in get_connection
+    conn = pymysql.connect(self.host, self.user or '', self.password or '',
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 599, in connect
+    self._request_authentication()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 860, in _request_authentication
+    self.write_packet(data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 645, in write_packet
+    self._write_bytes(data)
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/pymysql/connections.py", line 716, in _write_bytes
+    raise err.OperationalError(
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionResetError(104, 'Connection reset by peer'))")
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 19, in top-level template code
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 460, in call
+    if not __self.is_safe_callable(__obj):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/sandbox.py", line 360, in is_safe_callable
+    getattr(obj, "unsafe_callable", False) or getattr(obj, "alters_data", False)
+jinja2.exceptions.UndefinedError: '__' is undefined
+
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 211, in send_password_notification
+    self.send_welcome_mail_to_user()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 274, in send_welcome_mail_to_user
+    self.send_login_mail(subject, "new_user",
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/user/user.py", line 301, in send_login_mail
+    frappe.sendmail(recipients=self.email, sender=sender, subject=subject,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 145, in top-level template code
+TypeError: must be real number, not str
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 145, in top-level template code
+TypeError: must be real number, not str
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/website/context.py", line 48, in update_controller_context
+    ret = module.get_context(context)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 40, in get_context
+    "body": get_rendered_template(doc, print_format = print_format,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/www/printview.py", line 165, in get_rendered_template
+    html = template.render(args, filters={"len": len})
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "<template>", line 145, in top-level template code
+TypeError: must be real number, not str
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 54, in application
+    init_request(request)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 125, in init_request
+    frappe.local.http_request = frappe.auth.HTTPRequest()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 34, in __init__
+    self.set_session()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 71, in set_session
+    frappe.local.login_manager = LoginManager()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 116, in __init__
+    if self.login()==False: return
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 137, in login
+    self.authenticate(user=user, pwd=pwd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 222, in authenticate
+    self.fail(_('Incomplete login details'), user=user)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/auth.py", line 292, in fail
+    raise frappe.AuthenticationError
+frappe.exceptions.AuthenticationError
+
+deleting...
+deleting...
+deleting...
+deleting...

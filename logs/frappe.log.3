@@ -1,0 +1,42 @@
+[ERROR] 2022-09-29 09:29:38,672 | /home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py:
+Site: erp.tunatechnology.com
+Form Dict: {
+ "cmd": "frappe.desk.query_report.run",
+ "filters": "{\"company\":\"Paicho Pasal Pvt Ltd, Headoffice\",\"from_date\":\"2022-08-29\",\"to_date\":\"2022-04-14\",\"party\":[],\"group_by\":\"Group by Voucher (Consolidated)\",\"cost_center\":[],\"project\":[],\"include_default_book_entries\":1}",
+ "report_name": "Accounts Receivable"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 1105, in call
+    return fn(*args, **newargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 548, in wrapper_fn
+    retval = fn(*args, **get_newargs(fn, kwargs))
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/desk/query_report.py", line 213, in run
+    result = generate_report_result(report, filters, user, custom_columns)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 548, in wrapper_fn
+    retval = fn(*args, **get_newargs(fn, kwargs))
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/desk/query_report.py", line 73, in generate_report_result
+    res = get_report_result(report, filters) or []
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/desk/query_report.py", line 57, in get_report_result
+    res = report.execute_script_report(filters)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/report/report.py", line 120, in execute_script_report
+    res = self.execute_module(filters)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/core/doctype/report/report.py", line 137, in execute_module
+    return frappe.get_attr(method_name)(frappe._dict(filters))
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py", line 32, in execute
+    return ReceivablePayableReport(filters).run(args)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py", line 46, in run
+    self.get_columns()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py", line 768, in get_columns
+    self.setup_ageing_columns()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py", line 814, in setup_ageing_columns
+    for i, label in enumerate(["0-{range1}".format(range1=self.filters["range1"]),
+KeyError: 'range1'

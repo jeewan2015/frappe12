@@ -1,0 +1,8 @@
+frappe
+erpnext
+whitelabel
+pos_bahrain
+posawesome
+bluetheme
+doubleledger
+oman_vat

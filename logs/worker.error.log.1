@@ -1,0 +1,671 @@
+18:15:22 long: Job OK (50eb590e-19b6-422c-bf61-35364e4abaad)
+18:15:22 Result is kept for 500 seconds
+18:15:22 Cleaning registries for queue: long
+18:15:22 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (14b11eff-13b8-4a7f-9d81-94ac8aadef22)
+18:15:23 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:23 Moving job to 'failed' queue
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (ed097745-8b95-47bb-8640-9c8d2a855e44)
+18:15:23 long: Job OK (ed097745-8b95-47bb-8640-9c8d2a855e44)
+18:15:23 Result is kept for 500 seconds
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (f9c2214b-8538-461b-b754-0b268efb2c80)
+18:15:23 long: Job OK (f9c2214b-8538-461b-b754-0b268efb2c80)
+18:15:23 Result is kept for 500 seconds
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (8b10239d-ae64-4411-b41f-532758531f66)
+18:15:24 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:24 Moving job to 'failed' queue
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (5649c62a-a7c5-4c4c-9474-36edd820e76e)
+18:15:24 long: Job OK (5649c62a-a7c5-4c4c-9474-36edd820e76e)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (4b499bea-1aff-44e8-9f18-bc6ffee02d8d)
+18:15:24 long: Job OK (4b499bea-1aff-44e8-9f18-bc6ffee02d8d)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (67c3c66e-50de-4fe2-b2bb-16b98a28769c)
+18:15:24 long: Job OK (67c3c66e-50de-4fe2-b2bb-16b98a28769c)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_weekly', site='erp.tunatechnology.com', user='Administrator') (f9804767-50ec-4bf6-ad19-80b0fd2015c4)
+18:15:24 long: Job OK (f9804767-50ec-4bf6-ad19-80b0fd2015c4)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_weekly', site='erp.tunatechnology.com', user='Administrator') (098db937-01b9-4639-9fe9-4b72ed27b853)
+18:15:25 long: Job OK (098db937-01b9-4639-9fe9-4b72ed27b853)
+18:15:25 Result is kept for 500 seconds
+18:15:25 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.doctype.route_history.route_history.flush_old_route_records', kwargs={}, method='frappe.desk.doctype.route_history.route_history.flush_old_route_records', site='erp.tunatechnology.com', user='Administrator') (e68fc613-1b6e-461e-9039-5baffd3440a7)
+18:15:30 long: Job OK (e68fc613-1b6e-461e-9039-5baffd3440a7)
+18:15:30 Result is kept for 500 seconds
+18:15:30 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.desk.form.document_follow.send_weekly_updates', kwargs={}, method='frappe.desk.form.document_follow.send_weekly_updates', site='erp.tunatechnology.com', user='Administrator') (1b8f84c4-23b2-4989-a3c5-cb13a6668a9a)
+18:15:30 long: Job OK (1b8f84c4-23b2-4989-a3c5-cb13a6668a9a)
+18:15:30 Result is kept for 500 seconds
+18:15:30 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', kwargs={}, method='frappe.social.doctype.energy_point_log.energy_point_log.send_weekly_summary', site='erp.tunatechnology.com', user='Administrator') (f62cc05e-e2b5-49bc-99d8-bd5417469e93)
+18:15:30 long: Job OK (f62cc05e-e2b5-49bc-99d8-bd5417469e93)
+18:15:30 Result is kept for 500 seconds
+18:15:30 long: frappe.utils.background_jobs.execute_job(event='weekly_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.weekly_backup', site='erp.tunatechnology.com', user='Administrator') (8b20795b-0850-4077-86ef-a19357edf405)
+18:15:30 long: Job OK (8b20795b-0850-4077-86ef-a19357edf405)
+18:15:30 Result is kept for 500 seconds
+18:15:42 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (83ddfb7f-aee4-452c-90a4-08d8b18a995e)
+18:15:43 long: Job OK (83ddfb7f-aee4-452c-90a4-08d8b18a995e)
+18:15:43 Result is kept for 500 seconds
+18:15:43 Cleaning registries for queue: long
+18:15:43 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (25119468-e098-4350-bfa2-d4a80c6f3584)
+18:15:43 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:43 Moving job to 'failed' queue
+18:15:43 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (dc63f09a-79e2-48e2-ba46-2cfd5e7a4f5f)
+18:15:44 long: Job OK (dc63f09a-79e2-48e2-ba46-2cfd5e7a4f5f)
+18:15:44 Result is kept for 500 seconds
+18:15:44 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (c48a5a10-b3cf-48cb-8d06-4db3ee63673b)
+18:15:44 long: Job OK (c48a5a10-b3cf-48cb-8d06-4db3ee63673b)
+18:15:44 Result is kept for 500 seconds
+18:15:44 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (4ae4d849-fa25-4e8a-9b7a-6651817506ff)
+18:15:55 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:55 Moving job to 'failed' queue
+18:15:55 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (64dcee38-2be1-4c65-8c5a-9e8852d06e19)
+18:15:55 long: Job OK (64dcee38-2be1-4c65-8c5a-9e8852d06e19)
+18:15:55 Result is kept for 500 seconds
+18:15:55 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (768a6dc7-aabc-4916-a102-c75f0a1ee0e9)
+18:15:55 long: Job OK (768a6dc7-aabc-4916-a102-c75f0a1ee0e9)
+18:15:55 Result is kept for 500 seconds
+18:15:55 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (973a502e-ea9c-461b-acf5-123adc934650)
+18:15:55 long: Job OK (973a502e-ea9c-461b-acf5-123adc934650)
+18:15:55 Result is kept for 500 seconds
+18:15:02 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (33140f83-e386-4230-b69b-ca09de0c7082)
+18:15:03 long: Job OK (33140f83-e386-4230-b69b-ca09de0c7082)
+18:15:03 Result is kept for 500 seconds
+18:15:03 Cleaning registries for queue: long
+18:15:03 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (6560268e-aaea-4f33-af37-cd3252cc7033)
+18:15:05 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:05 Moving job to 'failed' queue
+18:15:05 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (14241159-c9f9-44df-9c11-4e419484fd68)
+18:15:05 long: Job OK (14241159-c9f9-44df-9c11-4e419484fd68)
+18:15:05 Result is kept for 500 seconds
+18:15:05 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (a5500ea7-8254-444d-a804-020deb138286)
+18:15:05 long: Job OK (a5500ea7-8254-444d-a804-020deb138286)
+18:15:05 Result is kept for 500 seconds
+18:15:05 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (54983d24-0f8f-4acb-8aec-6cf334ba21d0)
+18:15:06 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:06 Moving job to 'failed' queue
+18:15:06 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (56a03531-daad-4f91-a29f-825b90196106)
+18:15:06 long: Job OK (56a03531-daad-4f91-a29f-825b90196106)
+18:15:06 Result is kept for 500 seconds
+18:15:06 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (63b31df9-1c29-44b4-86e4-8d749ea684f7)
+18:15:06 long: Job OK (63b31df9-1c29-44b4-86e4-8d749ea684f7)
+18:15:06 Result is kept for 500 seconds
+18:15:06 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (8b3388b6-eede-44d2-bbd4-23b5c1c82bbe)
+18:15:06 long: Job OK (8b3388b6-eede-44d2-bbd4-23b5c1c82bbe)
+18:15:06 Result is kept for 500 seconds
+18:15:22 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (52666824-1f1c-49bd-a9ee-e144dbd03df2)
+18:15:22 long: Job OK (52666824-1f1c-49bd-a9ee-e144dbd03df2)
+18:15:22 Result is kept for 500 seconds
+18:15:22 Cleaning registries for queue: long
+18:15:22 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (2f61c06c-6fb5-46ad-9c94-637d111aa15f)
+18:15:23 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:23 Moving job to 'failed' queue
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (54ed539f-95cd-46aa-bd52-84b8c249fd55)
+18:15:23 long: Job OK (54ed539f-95cd-46aa-bd52-84b8c249fd55)
+18:15:23 Result is kept for 500 seconds
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (0790718c-d9b7-4fcf-a9dd-45b8ece7a30c)
+18:15:23 long: Job OK (0790718c-d9b7-4fcf-a9dd-45b8ece7a30c)
+18:15:23 Result is kept for 500 seconds
+18:15:23 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (77aa549e-84b6-4304-af8d-f4042cede57e)
+18:15:24 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:24 Moving job to 'failed' queue
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (fbde66ac-53cf-43ac-a157-6d7b9d5a0473)
+18:15:24 long: Job OK (fbde66ac-53cf-43ac-a157-6d7b9d5a0473)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (453f74a1-5876-43c6-9cf8-528b0f0ee5f3)
+18:15:24 long: Job OK (453f74a1-5876-43c6-9cf8-528b0f0ee5f3)
+18:15:24 Result is kept for 500 seconds
+18:15:24 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (9427939b-7ad3-47e3-8d35-752aaf96325f)
+18:15:24 long: Job OK (9427939b-7ad3-47e3-8d35-752aaf96325f)
+18:15:24 Result is kept for 500 seconds
+18:15:41 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (79dea567-bb62-4aea-8eda-264e3acac999)
+18:15:42 long: Job OK (79dea567-bb62-4aea-8eda-264e3acac999)
+18:15:42 Result is kept for 500 seconds
+18:15:42 Cleaning registries for queue: long
+18:15:42 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (7a8c8f01-e061-4639-ae27-075ba16720f7)
+18:15:43 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:43 Moving job to 'failed' queue
+18:15:43 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (4d5b49e8-3832-4d2c-b196-863f9853f8f5)
+18:15:43 long: Job OK (4d5b49e8-3832-4d2c-b196-863f9853f8f5)
+18:15:43 Result is kept for 500 seconds
+18:15:43 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (bbef5d2d-bea3-4a9d-9c3d-9bf494110494)
+18:15:43 long: Job OK (bbef5d2d-bea3-4a9d-9c3d-9bf494110494)
+18:15:43 Result is kept for 500 seconds
+18:15:43 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (d94b14a2-1f30-43fc-823f-12f5b65e42e9)
+18:15:44 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:44 Moving job to 'failed' queue
+18:15:44 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (c6b30d08-247a-461e-9fa3-8fca455b4741)
+18:15:44 long: Job OK (c6b30d08-247a-461e-9fa3-8fca455b4741)
+18:15:44 Result is kept for 500 seconds
+18:15:44 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (a6b3fadf-f4b1-4b38-9c9c-12833da33b99)
+18:15:44 long: Job OK (a6b3fadf-f4b1-4b38-9c9c-12833da33b99)
+18:15:44 Result is kept for 500 seconds
+18:15:44 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (33271602-5d3f-42d0-8823-da2d2f45cb64)
+18:15:44 long: Job OK (33271602-5d3f-42d0-8823-da2d2f45cb64)
+18:15:44 Result is kept for 500 seconds
+18:15:00 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.dropbox_settings.dropbox_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (09efc7dd-b86a-4cbf-acb2-8e68c3bba900)
+18:15:01 long: Job OK (09efc7dd-b86a-4cbf-acb2-8e68c3bba900)
+18:15:01 Result is kept for 500 seconds
+18:15:01 Cleaning registries for queue: long
+18:15:01 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.utils.change_log.check_for_update', kwargs={}, method='frappe.utils.change_log.check_for_update', site='erp.tunatechnology.com', user='Administrator') (b29f4e81-8442-48f8-b333-b0122aeb319f)
+18:15:03 ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 146, in check_for_update
+    app_details = check_release_on_github(app)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/change_log.py", line 209, in check_release_on_github
+    return Version(lastest_non_beta_release), org_name
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/semantic_version/base.py", line 102, in __init__
+    raise ValueError("Call either Version('1.2.3') or Version(major=1, ...).")
+ValueError: Call either Version('1.2.3') or Version(major=1, ...).
+18:15:03 Moving job to 'failed' queue
+18:15:03 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', kwargs={}, method='frappe.integrations.doctype.s3_backup_settings.s3_backup_settings.take_backups_daily', site='erp.tunatechnology.com', user='Administrator') (a4f0b4f4-d1af-4e79-895f-30edb9609176)
+18:15:04 long: Job OK (a4f0b4f4-d1af-4e79-895f-30edb9609176)
+18:15:04 Result is kept for 500 seconds
+18:15:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='frappe.integrations.doctype.google_drive.google_drive.daily_backup', kwargs={}, method='frappe.integrations.doctype.google_drive.google_drive.daily_backup', site='erp.tunatechnology.com', user='Administrator') (01cec200-fd44-4914-beac-603f7aec87ac)
+18:15:04 long: Job OK (01cec200-fd44-4914-beac-603f7aec87ac)
+18:15:04 Result is kept for 500 seconds
+18:15:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.setup.doctype.email_digest.email_digest.send', kwargs={}, method='erpnext.setup.doctype.email_digest.email_digest.send', site='erp.tunatechnology.com', user='Administrator') (0881e8d0-a224-413e-8626-1973a188b67f)
+18:15:04 frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+Traceback (most recent call last):
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/worker.py", line 793, in perform_job
+    rv = job.perform()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 599, in perform
+    self._result = self._execute()
+  File "/home/tunatechserver/frappe-bench/env/lib/python3.8/site-packages/rq/job.py", line 605, in _execute
+    return self.func(*self.args, **self.kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/utils/background_jobs.py", line 102, in execute_job
+    method(**kwargs)
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 788, in send
+    ed_obj.send()
+  File "/home/tunatechserver/frappe-bench/apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.py", line 59, in send
+    frappe.sendmail(
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 494, in sendmail
+    queue.send(recipients=recipients, sender=sender,
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/queue.py", line 77, in send
+    email_account = get_outgoing_email_account(True, append_to=reference_doctype, sender=sender)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/email/smtp.py", line 84, in get_outgoing_email_account
+    frappe.throw(_("Please setup default Email Account from Setup > Email > Email Account"),
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 381, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 360, in msgprint
+    _raise_exception()
+  File "/home/tunatechserver/frappe-bench/apps/frappe/frappe/__init__.py", line 320, in _raise_exception
+    raise raise_exception(msg)
+frappe.exceptions.OutgoingEmailError: Please setup default Email Account from Setup > Email > Email Account
+18:15:04 Moving job to 'failed' queue
+18:15:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', kwargs={}, method='erpnext.manufacturing.doctype.bom_update_tool.bom_update_tool.update_latest_price_in_all_boms', site='erp.tunatechnology.com', user='Administrator') (14b40645-621c-474a-8570-5ab797c4cc43)
+18:15:04 long: Job OK (14b40645-621c-474a-8570-5ab797c4cc43)
+18:15:04 Result is kept for 500 seconds
+18:15:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', kwargs={}, method='erpnext.hr.doctype.leave_ledger_entry.leave_ledger_entry.process_expired_allocation', site='erp.tunatechnology.com', user='Administrator') (18159875-b19e-48cb-9195-db894e75446f)
+18:15:04 long: Job OK (18159875-b19e-48cb-9195-db894e75446f)
+18:15:04 Result is kept for 500 seconds
+18:15:04 long: frappe.utils.background_jobs.execute_job(event='daily_long', is_async=True, job_name='erpnext.hr.utils.generate_leave_encashment', kwargs={}, method='erpnext.hr.utils.generate_leave_encashment', site='erp.tunatechnology.com', user='Administrator') (29c21afc-1c1f-42bd-827a-777e3869f2eb)
+18:15:05 long: Job OK (29c21afc-1c1f-42bd-827a-777e3869f2eb)
+18:15:05 Result is kept for 500 seconds
